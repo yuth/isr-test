@@ -12,5 +12,5 @@ export async function getStaticProps() {
   // Fetch data from an API or other source
   const data = { t: new Date().toISOString() };
   // Revalidate this page every 60 seconds
-  return { props: { data: data }, revalidate: 60 };
+  return { props: { data: data }, revalidate: 1 };
 }
